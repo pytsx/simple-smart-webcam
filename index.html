@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+  <title>COCO SSD 3.0</title>
+  <link rel='stylesheet' href='style.css'>
+  <meta charset='UTF-8'>
+</head>
+
+<body>
+
+  <div id="liveview">
+    <video height="600" width="800" id="webcam" autoplay muted></video>
+    <div id="liveviewdescription">
+
+    </div>
+    <button id="enablewebcam">acessar webcam</button>
+  </div>
+
+  <!-- Import TensorFlow.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+  <!-- Load the coco-ssd model to use to recognize things in images -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src='app.js'></script>
+</body>
+
+</html>
